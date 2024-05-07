@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "sofiapro";
+    src: url("/assets/sofiapro-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "geist";
+    src: url("/assets/Geist-Regular.otf") format("opentype");
+}
+
+body {
+    font-family: sofiapro, sans-serif;
+    height: 100vh;
+    background-image: url(assets/zelle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 19vw);
+    grid-template-rows: repeat(3, 16vw);
+    /*gap: 1vw;*/
+}
+
+.title {
+    color: #C2929C;
+    font-family: "Sofia Pro";
+    font-size: 8.8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.5vw;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin-top: 7%;
+}
+
+.blackmirror {
+    color: #C2929C;
+    font-family: "sofiapro";
+    font-size: 1.9vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-top: 13%;
+    margin-left: 20%;
+}
+
+.episode {
+    color: #C2929C;
+    font-family: "sofiapro";
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-top: 72%;
+    margin-left: 29%;
+}
+
+.director {
+    color: #C2929C;
+    font-family: "sofiapro";
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-top: 80%;
+    margin-left: 20%;
+
+}
+
+.director-initial {
+    font-family: "geist";
+}
+
+.frau {
+    width: 523%;
+    margin-top: -4%;
+    margin-left: -3.6%;
+    z-index: 9999;
+}
+
+.mann {
+    width: 522%;
+    margin-top: -2.5%;
+    margin-left: -102.6%;
+    z-index: 9999;
+}
+
+@media all and (max-width: 40em) {
+    body {
+        background-image: url(assets/zellemobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 24vw);
+        grid-template-rows: repeat(5, 44vw);
+        /*gap: 1vw;*/
+    }
+
+    .mann {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .frau {
+        display: none;
+    }
+
+    .fraumobile {
+        width:200%;
+        margin-top: -4%;
+        margin-left: -3.6%;
+        z-index: 9999;
+    }
+
+    .blackmirror {
+        font-size: 10vw;
+        grid-column: 2/5;
+        grid-row: 2/3;
+        margin-top: 13%;
+        margin-left: 20%;
+
+    }
+}
