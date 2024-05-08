@@ -1,3 +1,6 @@
+
+//CLICK FOR NUMBERS
+
 /*document.addEventListener("DOMContentLoaded", function() {
     // Get references to the elements
     const frauImage = document.querySelector('.frau');
@@ -39,19 +42,11 @@
 
 // AUDIO
 
-/*// Wait for 4 seconds before playing the audio
-setTimeout(function() {
-    // Create an audio element
-    var audio = new Audio('assets/quote.mp3');
-    // Play the audio
-    audio.play();
-  }, 4000); // 4000 milliseconds = 4 seconds*/
-
   document.addEventListener('click', function() {
     setTimeout(function() {
         var audio = new Audio('assets/quote.mp3');
         audio.play();
-    }, 1000);
+    }, 200);
 });
 
 // CURSOR

@@ -35,17 +35,19 @@ body {
     mix-blend-mode: difference;*/
     position: fixed;
     pointer-events: none;
-    z-index: 99;
+    z-index: 9999;
 }
 
 .cursor-text {
     position: absolute;
     top: 50%;
-    left: 40px; /* Adjust the distance from the cursor */
+    left: 40px;
+    /* Adjust the distance from the cursor */
     transform: translateY(-50%);
     font-family: "Sofia Pro";
     font-size: 1.1vw;
     color: #C2929C;
+    z-index: 9999;
 }
 
 .title {
@@ -156,7 +158,7 @@ body {
 }
 
 
-/*.ellipse1 {
+.ellipse1 {
     width: 50vw;
     height: 10vw;
     stroke-width: 2px;
@@ -164,6 +166,10 @@ body {
     margin-top: 62%;
     margin-left: -235%;
     z-index: 9999;
+    /*animation: fadeOut 1s ease-out 2s infinite forwards, 
+        fadeIn 7s ease-in-out 1s infinite forwards;*/
+    animation: fadeInOut 6s ease-in-out 7s infinite;
+    opacity: 0;
 }
 
 .lacie {
@@ -176,6 +182,8 @@ body {
     line-height: 0.9;
     margin-top: 50%;
     margin-left: -374.3%;
+    animation: fadeInOut 6s ease-in-out 8s infinite;
+    opacity: 0;
 }
 
 .smallnumber1 {
@@ -187,6 +195,8 @@ body {
     font-weight: 250;
     margin-top: -8.5%;
     margin-left: 58%;
+    animation: fadeInOut 6s ease-in-out 8s infinite;
+    opacity: 0;
 }
 
 .ellipse2 {
@@ -197,6 +207,8 @@ body {
     margin-top: 55%;
     margin-left: -10%;
     z-index: 9999;
+    animation: fadeInOut 6s ease-in-out 11s infinite;
+    opacity: 0;
 }
 
 .joe {
@@ -209,6 +221,8 @@ body {
     line-height: 0.9;
     margin-top: -34%;
     margin-left: 48%;
+    animation: fadeInOut 6s ease-in-out 12s infinite;
+    opacity: 0;
 }
 
 .smallnumber2 {
@@ -220,7 +234,9 @@ body {
     font-weight: 250;
     margin-top: -92.5%;
     margin-left: 473%;
-}*/
+    animation: fadeInOut 6s ease-in-out 12s infinite;
+    opacity: 0;
+}
 
 .nose {
     display: none;
@@ -230,8 +246,43 @@ body {
     display: none;
 }
 
-/* Vor dem Klicken versteckt */
-/*.ellipse1,
+/*@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}*/
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Vor dem Klicken versteckt 
+.ellipse1,
 .ellipse2,
 .lacie,
 .joe,
@@ -256,11 +307,12 @@ body {
         grid-template-rows: repeat(5, 44vw);
         /*gap: 1vw;*/
     }
-    
+
     .cursor-text {
         position: absolute;
         top: 50%;
-        left: 40px; /* Adjust the distance from the cursor */
+        left: 40px;
+        /* Adjust the distance from the cursor */
         transform: translateY(-50%);
         font-family: "Sofia Pro";
         font-size: 4.2vw;
@@ -282,7 +334,9 @@ body {
     .fraumobile {
         display: grid;
         width: 260%;
-        margin-top: 157%;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin-top: -30%;
         margin-left: -123%;
         z-index: 8;
     }
@@ -326,8 +380,10 @@ body {
         font-weight: 500;
         line-height: normal;
         letter-spacing: 2.5vw;
-        margin-top: 90%;
-        margin-left: 367%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: -236%;
+        margin-left: 207%;
         z-index: 7;
         transform: rotate(90deg);
     }
@@ -341,24 +397,44 @@ body {
         font-weight: 500;
         line-height: normal;
         letter-spacing: 2.5vw;
-        margin-top: 442%;
-        margin-left: -27%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 281%;
+        margin-left: -32%;
         z-index: 7;
         transform: rotate(90deg);
     }
 
-    /*.joe,
+    .ellipse2,
+    .joe,
     .smallnumber2 {
         display: none;
     }
 
+    .ellipse1 {
+        display: grid;
+        width: 36vw;
+        height: 36vw;
+        margin-top: 150%;
+        margin-left: 154%;
+    }
+
     .lacie {
-        font-family: "Sofia Pro";
-        font-size: 2vw;
+        display: grid;
+        font-size: 12vw;
         font-style: normal;
-        font-weight: 300;
-        line-height: 0.9;
-        margin-top: 50%;
-        margin-left: -374.3%;
-    }*/
+        margin-top: 146%;
+        margin-left: -45%;
+    }
+
+    .smallnumber1 {
+        display: grid;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 250;
+        margin-top: 206%;
+        margin-left: -72%;
+        animation: fadeInOut 6s ease-in-out 8s infinite;
+        opacity: 0;
+    }
 }
