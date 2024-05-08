@@ -1,4 +1,4 @@
 # DIDES24_Sprint
 Sprint Nosedive
 
-https://github.com/Chiaar/DIDES24_Sprint.git
+https://chiaar.github.io/DIDES24_Sprint/home.html
