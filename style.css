@@ -24,6 +24,30 @@ body {
     /*gap: 1vw;*/
 }
 
+.custom-cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3.5px solid #C2929C;
+    /*background-color: rgb(255, 255, 255);
+    text-align: right;
+    text-indent: 45px; /*Position des Click Textes
+    mix-blend-mode: difference;*/
+    position: fixed;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.cursor-text {
+    position: absolute;
+    top: 50%;
+    left: 40px; /* Adjust the distance from the cursor */
+    transform: translateY(-50%);
+    font-family: "Sofia Pro";
+    font-size: 1.1vw;
+    color: #C2929C;
+}
+
 .title {
     color: #C2929C;
     font-family: "Sofia Pro";
@@ -36,7 +60,7 @@ body {
     grid-row: 2/3;
     margin-top: 7%;
     animation: fadein 3.2s ease-in-out 0.9s forwards,
-    scale 3.2s ease-in-out 0.9s forwards;
+        scale 3.2s ease-in-out 0.9s forwards;
     opacity: 0;
 }
 
@@ -51,8 +75,8 @@ body {
     grid-row: 2/3;
     margin-top: 13%;
     margin-left: 20%;
-    animation: fadein 2.5s ease-in-out 3s forwards,
-    scale 2.5s ease-in-out 0.9s forwards;
+    animation: fadein 2.5s ease-in-out 4s forwards,
+        scale 2.5s ease-in-out 0.9s forwards;
     opacity: 0;
 }
 
@@ -67,8 +91,8 @@ body {
     grid-row: 3/4;
     margin-top: 72%;
     margin-left: 29%;
-    animation: fadein 2.5s ease-in-out 3s forwards,
-    scale 2.5s ease-in-out 0.9s forwards;
+    animation: fadein 2.5s ease-in-out 4s forwards,
+        scale 2.5s ease-in-out 0.9s forwards;
     opacity: 0;
 }
 
@@ -83,8 +107,8 @@ body {
     grid-row: 3/4;
     margin-top: 80%;
     margin-left: 20%;
-    animation: fadein 2.5s ease-in-out 3s forwards,
-    scale 2.5s ease-in-out 0.9s forwards;
+    animation: fadein 2.5s ease-in-out 4s forwards,
+        scale 2.5s ease-in-out 0.9s forwards;
     opacity: 0;
 
 }
@@ -113,21 +137,24 @@ body {
 
 @keyframes fadein {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes scale {
+}
+
+@keyframes scale {
     from {
-      transform: scale(0.5);
+        transform: scale(0.5);
     }
+
     to {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}
+
 
 /*.ellipse1 {
     width: 50vw;
@@ -228,6 +255,16 @@ body {
         grid-template-columns: repeat(4, 24vw);
         grid-template-rows: repeat(5, 44vw);
         /*gap: 1vw;*/
+    }
+    
+    .cursor-text {
+        position: absolute;
+        top: 50%;
+        left: 40px; /* Adjust the distance from the cursor */
+        transform: translateY(-50%);
+        font-family: "Sofia Pro";
+        font-size: 4.2vw;
+        color: #C2929C;
     }
 
     .mann {
