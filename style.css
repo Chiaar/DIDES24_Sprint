@@ -66,7 +66,7 @@ body {
 
 .blackmirror {
     color: #C2929C;
-    font-family: "sofiapro";
+    font-family: "Sofia Pro";
     font-size: 1.9vw;
     font-style: normal;
     font-weight: 400;
@@ -220,7 +220,7 @@ body {
     font-weight: 250;
     margin-top: -92.5%;
     margin-left: 473%;
-}
+}*/
 
 .nose {
     display: none;
@@ -228,7 +228,7 @@ body {
 
 .dive {
     display: none;
-}*/
+}
 
 /* Vor dem Klicken versteckt */
 /*.ellipse1,
@@ -288,6 +288,7 @@ body {
     }
 
     .blackmirror {
+        font-family: "Sofia Pro";
         font-size: 8vw;
         grid-column: 1/5;
         grid-row: 5/6;
@@ -298,6 +299,7 @@ body {
     }
 
     .episode {
+        font-family: "Sofia Pro";
         font-size: 4.2vw;
         grid-column: 2/4;
         grid-row: 5/6;
@@ -307,6 +309,7 @@ body {
     }
 
     .director {
+        font-family: "Sofia Pro";
         font-size: 4.2vw;
         grid-column: 1/5;
         grid-row: 5/6;
@@ -315,6 +318,7 @@ body {
     }
 
     .nose {
+        display: grid;
         color: #C2929C;
         font-family: "Sofia Pro";
         font-size: 33vw;
@@ -329,6 +333,7 @@ body {
     }
 
     .dive {
+        display: grid;
         color: #C2929C;
         font-family: "Sofia Pro";
         font-size: 33vw;
