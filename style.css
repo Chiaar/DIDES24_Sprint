@@ -45,7 +45,7 @@ body {
     left: 40px;
     /* Adjust the distance from the cursor */
     transform: translateY(-50%);
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 1.1vw;
     color: #C2929C;
     z-index: 9999;
@@ -53,9 +53,9 @@ body {
 
 .title {
     color: #C2929C;
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 8.8vw;
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 2.5vw;
@@ -69,14 +69,14 @@ body {
 
 .blackmirror {
     color: #C2929C;
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 1.9vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     grid-column: 3/4;
     grid-row: 2/3;
-    margin-top: 13%;
+    margin-top: 7%;
     margin-left: 20%;
     animation: fadein 2.5s ease-in-out 4s forwards,
         scale 2.5s ease-in-out 0.9s forwards;
@@ -85,7 +85,7 @@ body {
 
 .episode {
     color: #C2929C;
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 1.1vw;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +101,7 @@ body {
 
 .director {
     color: #C2929C;
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 1.1vw;
     font-style: normal;
     font-weight: 400;
@@ -176,7 +176,7 @@ body {
 .lacie {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 4.3vw;
     font-style: normal;
     font-weight: 300;
@@ -190,7 +190,7 @@ body {
 .smallnumber1 {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 2.5vw;
     font-style: normal;
     font-weight: 250;
@@ -215,7 +215,7 @@ body {
 .joe {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 4.3vw;
     font-style: normal;
     font-weight: 300;
@@ -229,7 +229,7 @@ body {
 .smallnumber2 {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Sofia Pro";
+    font-family: sofiapro, sans-serif;
     font-size: 2.5vw;
     font-style: normal;
     font-weight: 250;
